@@ -1930,33 +1930,43 @@ nav.navigation.posts-navigation {
 // ***                    *** //
 
 
-.hero {
-    img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-        padding-top: 4.5cm;
-        margin-left: -200px;
-        width: 1500px;
-        margin-bottom: 100px;
-        height: 100%;
+#careers {
+    .hero {
+        img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+            padding-top: 4.5cm;
+            margin-left: -200px;
+            width: 100%;
+            margin-bottom: 100px;
+            height: auto;
+        }
     }
+    .entry-content-page {
+        h1 {
+            text-transform: capitalize;
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+        p {
+            margin-left: 60px;
+            margin-bottom: 5rem;
+            width: 90%
+        }
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            margin-bottom: -50px;
+        }
+    }
+    .location {
+        text-align: right;
+        margin-bottom: 0px;
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+    .content-info.cf-footer {
+        margin-top: 250px;
+    }    
 }
 
-.entry-content-page {
-    h1 {
-        text-transform: capitalize;
-        padding-top: 25px;
-        padding-bottom: 50px;
-    }
-    p {
-        margin-left: 10px;
-    }
-    .row {
-        margin-right: -675px;
-        margin-left: 75px;
-        margin-bottom: 20px;
-    }
-}
-
-.content-info.cf-footer {
-    margin-top: 200px;
-}
 
