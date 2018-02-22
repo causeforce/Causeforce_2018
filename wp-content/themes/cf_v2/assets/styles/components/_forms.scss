@@ -1,0 +1,128 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+// Quick Contact form
+.ct-form {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    padding: 20px;
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 1px 10px #dadada;
+    font-family: $r-font;
+    z-index: 99;
+    h4 {
+        text-align: center;
+        text-transform: none;
+        color: $blue;
+        margin-bottom: 20px;
+    }
+    input{
+        margin-bottom: 10px;
+        width: 100%;
+        background: #f9f9f9;
+        border: none;
+        padding: 10px;
+    }
+    textarea {
+        width: 100%;
+        max-height: 150px;
+        min-height: 100px;
+        background: #f9f9f9;
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .orange-btn {
+        padding: 10px 40px;
+        width: 100%;
+    }
+    .close-icn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        text-transform: uppercase;
+        color: #bcbcbc;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}
+.mail-icn {
+    position: fixed;
+    right: 45px;
+    bottom: 30px;
+    cursor: pointer;
+    background: #fff;
+    z-index: 97;
+    img {
+        width: 50px;
+        box-shadow: 0px 1px 10px #6a6a6a;
+    }
+    @media screen and (max-width: 400px) {
+        right: 30px;
+    }
+}
+
+input.wpcf7-form-control.wpcf7-text {
+    margin-bottom: 0px !important;
+}
+.col-md-6.contact-col label {
+    width: 100%;
+    margin: 0px;
+}
+
+.form-btn-cont {
+    input {
+        @extend .orange-btn-form;
+        padding: 0px !important;
+        height: 60px !important;
+    }
+}
+.quick-form-btn-cont {
+    input {
+        @extend .orange-btn-form;
+    }
+}
+div.wpcf7 {
+    margin-top: 20px;
+}
+div.wpcf7-mail-sent-ok {
+    border-color: $orange;
+}
+div.wpcf7-validation-errors {
+    border-color: $red;
+}
+
+// Make fields required
+//span.wpcf7-form-control-wrap.your-name,
+//span.wpcf7-form-control-wrap.your-company,
+//span.wpcf7-form-control-wrap.your-phone,
+//span.wpcf7-form-control-wrap.your-email{
+//    &:before {
+//        content: "*";
+//        position: absolute;
+//        top: -15px;
+//        left: -15px;
+//        color: #FF0000;
+//        font-size: 20px;
+//    }
+//}

@@ -1,0 +1,289 @@
+// Hide Header/Page Title
+.page-header {
+    display: none;
+}
+
+.menu-cont {
+    padding: 25px 20px 0px;
+    @media screen and (max-width: 400px) {
+        padding: 13px 0;
+    }
+    // Logo
+    .brand {
+        margin-left: 20px;
+        img {
+            position: relative;
+            max-width: 250px;
+            &:nth-child(2) {
+                max-width: 50px;
+                margin-left: 10px
+            }
+            @media screen and (max-width: 768px) {
+                max-width: 53%;
+            }
+            @media screen and (max-width: 400px) {
+                margin-left: auto;
+                &:first-child {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+// Banner Positioning
+.banner {
+    position: relative;
+    z-index: 119;
+    transition: all 0.2s ease-in-out;
+}
+
+// Mobile Menu Overlay
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $blue;
+    z-index: 99;
+    display: none;
+    .container {
+        position: relative;
+        height: 93%;
+        .links-row {
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            height: 90%;
+        }
+    }
+    .mobile-brand {
+        position: relative;
+        top: 25px;
+        left: 20px;
+        img {
+            &:first-child {
+                width: 100% !important;
+                max-width: 250px !important;
+                @media screen and (max-width: 400px) {
+                    display: none;
+                }
+            }
+            &:nth-child(2) {
+                max-width: none;
+                width: 50px;
+                margin-left: 10px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            top: 20px;
+        }
+        @media screen and (max-width: 400px) {
+            top: 15px;
+            left: 0px;
+        }
+    }
+    .col-md-4 {
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+    .fa {
+        font-size: 50px;
+        vertical-align: bottom;
+        @media screen and (max-width: 400px) {
+            font-size: calc(3vw + 3vh);
+        }
+    }
+}
+// Mobile Burger Block
+.block {
+    background: mix($orange, #fff, 15%);
+    z-index: 111;
+}
+
+/*
+ * Burger Menu
+ */
+.burger_menu {
+    position: relative;
+    margin-top: 3%;
+    .nav {
+        display: block;
+    }
+    li {
+        margin-right: 10px;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            margin-right: 0px;
+        }
+        a {
+            color: #fff;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-family: $b-font;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: $gold;
+                text-decoration: none;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: calc(3vw + 3vh);
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        top: 15px;
+    }
+}
+.bt-menu {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    display: block;
+    width: 50px;
+    height: 40px;
+    background: $orange;
+    z-index: 999;
+    &:after,
+    &:before {
+        content: "";
+    }
+  
+    span,
+    &::after,
+    &::before {
+        backface-visibility: hidden;
+        position: absolute;
+        left: 13px;
+        right: 13px;
+        border-top: 4px solid $white;
+        transition: .2s;
+        border-radius: 0px;
+    }
+  
+    &::before {
+        top: 10px;
+    }
+
+    span {
+        top: 18px;
+    }
+
+    &::after {
+        top: 26px;
+    }
+
+    &.active {
+        background: none;
+        position: fixed;
+        &::before,
+        &::after {
+            top: 20px;
+            backface-visibility: hidden;
+            transition: .3s;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        span {
+            opacity: 0;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+    @media screen and (max-width: 400px) {
+        top: 20px;
+        right: 30px;
+    }
+}
+
+// Mobile Menu Link Styling
+#menu-cf_v2 {
+    li {
+        a {
+            font-family: 'Din Bold', Arial, sans-serif;
+            display: block;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: $gold
+            }
+        }
+    }
+}
+
+.mobile-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    p {
+        font-family: $r-font;
+        font-size: 15px;
+        color: #fff;
+        strong {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+        a {
+            color: $white;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+        text-align: center;
+        padding-bottom: 20px;
+        .col-md-3:nth-child(2) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Sticky Nav Wheel
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1.7rem;
+    padding-bottom: 1rem;
+    z-index: 1030;
+    .menu-cont {
+        position: relative;
+        top: -30px;
+        .brand img {
+            max-width: 80px;
+            left: 0;
+            top: 0;
+            @media screen and (max-width: 768px) {
+                left: 0;
+                top: 0;
+                max-width: 50px;
+            }
+        }
+        .cf-infi {
+            &:hover {
+                animation: test 1s linear infinite;
+            }
+        }
+    }
+}
+@keyframes test {
+    100% {transform: rotate(360deg);}
+}
+
+// Scroll and No-Scroll for full menu
+.no-scroll {
+    overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
+    position: relative;
+}

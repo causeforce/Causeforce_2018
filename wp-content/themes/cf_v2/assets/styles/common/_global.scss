@@ -1,0 +1,60 @@
+// Global Styles
+body {
+    position: relative;
+    // padding-bottom: 306px;
+    // @media screen and (max-width: 768px) {
+    //     padding-bottom: 345px;
+    // }
+}
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+    font-family: "Din Bold", Arial, sans-serif;
+    color: $blue;
+}
+h5 {
+ font-family: "Din Bold", Arial, sans-serif;  
+ color: $blue;  
+}
+p, div, span {
+    font-family: $body-font;
+    color:#073564;
+}
+strong {
+    font-family: "Din Bold", Arial, sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+.content.row {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+main.main {
+    padding: 0px;
+}
+
+// Font Awesome
+.fa {
+    color: $white;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $gold;
+    }
+}
+
+// Text Colors
+.text-orange {
+    color: $orange !important;
+}
+.text-blue {
+    color: $blue !important;
+}
+.wrap {
+    margin-top: -145px;
+    @media screen and (max-width: 768px) {
+        margin-top: auto;
+    }
+}

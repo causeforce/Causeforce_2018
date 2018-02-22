@@ -1,1 +1,3 @@
-# Causeforce_2018
+# CauseForce Custom Theme
+
+This project was created for CauseForce.com.

@@ -1,0 +1,54 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors 
+$black: #000000;
+$blue: #003764;
+$blue-dark: #073564;
+$gold: #f5c400;
+$gray: #e3e6ec;
+$gray-light: #f0f2f5;
+$orange: #e27c00;
+$red: #ff0000;
+$white: #ffffff;
+
+// Fonts
+@font-face {
+    font-family: 'Din Reg';
+    src: url('../../assets/fonts/DINNextLTPro-Regular.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Regular.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Regular.woff') format("woff");
+         
+    
+}
+@font-face {
+    font-family: 'Din Bold';
+    src: url('../../assets/fonts/DINNextLTPro-Bold.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Bold.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Bold.woff') format("woff");
+         
+    
+}
+
+@font-face {
+    font-family: 'Din Med';
+    src: url('../../assets/fonts/DINNextLTPro-Medium.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Medium.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Medium.woff') format("woff");
+         
+    
+}
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.ttf') format("ttf"),
+        url('../../assets/fonts/FontAwesome/fonts/FontAwesome.otf') format("otf"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.woff') format("woff"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.woff2') format("woff2"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.eot') format("eot");
+}
+
+$body-font: 'Vesper Libre', Arial, serif;
+$b-font: 'Din Bold', Arial, sans-serif;
+$r-font: 'Din Reg', Arial, sans-serif;
+$m-font: 'Din Med', Arial, sans-serif;

@@ -1,0 +1,74 @@
+// All Button styles go below
+
+.orange-btn {
+    background: $orange;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $orange;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: transparent;
+        color: $orange;
+    }
+}
+.orange-btn-outline {
+    background: transparent;
+    color: $orange;
+    padding: 15px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $orange;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: $orange;
+        color: $white;
+    }
+}
+
+.orange-btn-form {
+    @extend .orange-btn;
+    width: 100% !important;
+    background: $orange !important;
+    border: 2px solid $orange !important;
+    &:hover {
+        background: transparent !important;
+        color: $orange;
+    }
+}
+
+.blue-btn {
+    background: $blue;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $blue;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: transparent;
+        color: $blue;
+    }
+}
+.blue-btn-outline {
+    background: transparent;
+    color: $blue;
+    padding: 15px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $blue;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: $blue;
+        color: $white;
+    }
+}
