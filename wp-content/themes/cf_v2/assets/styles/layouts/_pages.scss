@@ -1987,38 +1987,46 @@ nav.navigation.posts-navigation {
 
 
 .jobs-template-default.single.single-jobs {
-  h1.entry-title {
-    text-align: left;
-    padding-top: 80px;
-    text-transform: capitalize;
-  }
-  div.entry-content {
-    margin: 0 auto 0 10px;
-
-    ul {
-      margin-left: -20px;
+    h1.entry-title {
+        text-align: left;
+        padding-top: 80px;
+        text-transform: capitalize;
+        margin-left: 10px;
     }
-    h6 {
-      padding-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: Din Bold,Arial,sans-serif;
+    div.entry-content {
+        margin: 0 auto 0 10px;
+        ul {
+            margin-left: -20px;
+        p {
+            text-align: center;
+            width: 131%
+            }
+        }
+        h6 {
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Din Bold,Arial,sans-serif;
+        }
+        h5 {
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 1px solid black;
+            width: 131%;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+      }
+      a {
+          button.orangeBtn {
+            display: none;
+          }
+        }
+      footer.content-info {
+        margin-top: 50px;
+      }
     }
-    h5 {
-      margin-top: 50px;
-      padding-top: 50px;
-    }
-    p {
-  margin-top: 0px;
-  margin-bottom: 10px;
-    }
-  }
-  a.orangeBtn {
-    display: none;
-  }
-  footer.content-info {
-    margin-top: 50px;
-  }
-}
 
 
