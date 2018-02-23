@@ -1948,7 +1948,7 @@ nav.navigation.posts-navigation {
                 padding-bottom: 50px;
             }
             p {
-                margin-left: 40px;
+                margin-left: 10px;
                 margin-bottom: 6rem;
             }
         }
@@ -1958,10 +1958,14 @@ nav.navigation.posts-navigation {
         margin-left: -15px;
         margin-bottom: -75px;
         margin-top: 15px;
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
     }
     .location {
         text-align: right;
         margin-bottom: 0px;
+        margin-right: 12px;
         @media screen and (max-width:768px) {
             text-align: center;
         }
