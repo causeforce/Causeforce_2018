@@ -1986,21 +1986,33 @@ nav.navigation.posts-navigation {
 // ***                       *** //
 
 
+
 .jobs-template-default.single.single-jobs {
     h1.entry-title {
         text-align: left;
         padding-top: 80px;
         text-transform: capitalize;
         margin-left: 10px;
-    }
-    div.entry-content {
-        margin: 0 auto 0 10px;
-        ul {
-            margin-left: -20px;
-        p {
-            text-align: center;
-            width: 131%
-            }
+        div.entry-content {
+            margin: 0 auto 0 10px;
+            ul {
+                margin-left: -20px;
+                p {
+                    text-align: center;
+                    width: 131%
+                }
+                h5 {
+                    margin-top: 50px;
+                    padding-top: 50px;
+                    border-top: 1px solid black;
+                    width: 131%;
+                }
+                a {
+                    button.orangeBtn {
+                    display: none;
+                    }
+                }
+            }   
         }
         h6 {
             padding-top: 20px;
@@ -2008,25 +2020,14 @@ nav.navigation.posts-navigation {
             font-weight: bold;
             font-family: Din Bold,Arial,sans-serif;
         }
-        h5 {
-            margin-top: 50px;
-            padding-top: 50px;
-            border-top: 1px solid black;
-            width: 131%;
-        }
         p {
             margin-top: 0px;
             margin-bottom: 10px;
         }
-      }
-      a {
-          button.orangeBtn {
-            display: none;
-          }
-        }
-      footer.content-info {
+        footer.content-info {
         margin-top: 50px;
       }
     }
+}
 
 
