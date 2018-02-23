@@ -1934,28 +1934,29 @@ nav.navigation.posts-navigation {
     .hero {
         img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
             padding-top: 4.5cm;
-            margin-left: -200px;
+            // margin-left: -200px;
             width: 100%;
             margin-bottom: 100px;
             height: auto;
         }
     }
-    .entry-content-page {
-        h1 {
-            text-transform: capitalize;
-            padding-top: 25px;
-            padding-bottom: 50px;
+    .intro {
+        .entry-content-page {
+            h1 {
+                text-transform: capitalize;
+                padding-top: 25px;
+                padding-bottom: 50px;
+            }
+            p {
+                margin-left: 60px;
+                margin-bottom: 5rem;
+            }
         }
-        p {
-            margin-left: 60px;
-            margin-bottom: 5rem;
-            width: 90%
-        }
-        .row {
-            margin-right: -15px;
-            margin-left: -15px;
-            margin-bottom: -50px;
-        }
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-bottom: -50px;
     }
     .location {
         text-align: right;
