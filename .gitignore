@@ -60,3 +60,4 @@ typings/
 # Wordpress Files
 wp-includes/
 wp-config.php
+wp-content/themes/cf_v2/gulpfile.js
