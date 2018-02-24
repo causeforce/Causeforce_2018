@@ -1993,7 +1993,7 @@ nav.navigation.posts-navigation {
             text-align: left;
             padding-top: 80px;
             text-transform: capitalize;
-            margin-left: 140px;
+            margin-left: 10px;
             margin-bottom: 20px;
         }
         div.entry-content {
@@ -2002,16 +2002,6 @@ nav.navigation.posts-navigation {
                 margin-left: -20px;
                 p {
                     text-align: center;
-                    width: 131%
-                }
-                h5 {
-                    margin-top: 50px;
-                    padding-top: 50px;
-                    border-top: 1px solid black;
-                    width: 131%;
-                }
-                a {
-                   display: none;
                 }
             }   
             h6 {
@@ -2023,6 +2013,16 @@ nav.navigation.posts-navigation {
             p {
                 margin-top: 0px;
                 margin-bottom: 10px;
+                width: 131%
+            }
+             a {
+               display: none;
+            }
+             h5 {
+                margin-top: 50px;
+                padding-top: 50px;
+                border-top: 1px solid black;
+                width: 131%;
             }
         }
     }
