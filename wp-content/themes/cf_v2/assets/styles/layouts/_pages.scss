@@ -1954,13 +1954,20 @@ nav.navigation.posts-navigation {
         }
     }
     .row {
-        margin-right: -15px;
-        margin-left: -15px;
-        margin-bottom: -75px;
-        margin-top: 15px;
-        padding-bottom: 60px;
+        text-align: center;
+        margin-left: -15%;
+        margin-right: 2.5%;
+        padding-bottom: 2.5%;
+        @media screen and (max-width:991px) {
+            margin-right: inherit;
+        }
         @media screen and (max-width:768px) {
             text-align: center;
+            padding-bottom: 5%;
+        }
+        @media screen and (max-width:400px) {
+            margin-left: initial;
+            margin-right: initial;
         }
     }
     .location {
@@ -1969,6 +1976,7 @@ nav.navigation.posts-navigation {
         margin-right: 12px;
         @media screen and (max-width:768px) {
             text-align: center;
+            padding-bottom: 90px;
         }
     }
 }
