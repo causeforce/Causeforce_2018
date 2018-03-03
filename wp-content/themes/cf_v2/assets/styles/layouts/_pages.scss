@@ -1956,6 +1956,9 @@ nav.navigation.posts-navigation {
     .jobWrapper {
         width: 90%;
         margin-left: 5%;
+        a:hover {
+            text-decoration: underline;
+        }
     }
     .row {
         margin-left: 2.5%;
