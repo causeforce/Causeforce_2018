@@ -1953,14 +1953,28 @@ nav.navigation.posts-navigation {
             }
         }
     }
+    .jobWrapper {
+        width: 90%;
+        margin-left: 5%;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
     .row {
-        margin-right: -15px;
-        margin-left: -15px;
-        margin-bottom: -75px;
-        margin-top: 15px;
-        padding-bottom: 60px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-bottom: 2.5%;
+        @media screen and (max-width:991px) {
+            margin-right: initial;
+            margin-left: initial;
+        }
         @media screen and (max-width:768px) {
             text-align: center;
+            padding-bottom: 5%;
+        }
+        @media screen and (max-width:400px) {
+            margin-left: initial;
+            margin-right: initial;
         }
     }
     .location {
@@ -1969,6 +1983,7 @@ nav.navigation.posts-navigation {
         margin-right: 12px;
         @media screen and (max-width:768px) {
             text-align: center;
+            padding-bottom: 3%;
         }
     }
 }
@@ -1987,7 +2002,7 @@ nav.navigation.posts-navigation {
 
 
 
-.jobs-template-default.single-jobs.customize-support {
+.jobs-template-default.single-jobs {
     div.wrap {
         h1.entry-title {
             text-align: left;
@@ -2016,7 +2031,17 @@ nav.navigation.posts-navigation {
                 width: 131%
             }
              a {
-               display: none;
+                button.orangeBtn {
+                    background: #e27c00;
+                    color: white;
+                    font-family: Din ,Arial,sans-serif;
+                    font-size: 11px;
+                    width: 125px;
+                    height: 35px;
+                    text-transform: uppercase;
+                    margin-top: 50px;
+                    letter-spacing: .5px;
+                }
             }
              h5 {
                 margin-top: 50px;
