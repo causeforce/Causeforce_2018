@@ -1,7 +1,7 @@
 // ***                    *** //
 // **** Homepage Styling **** //
 // ***                    *** //
- 
+
 .home-hero {
     background:#073564;
 
@@ -26,7 +26,7 @@
         z-index: 80;
         background: #F5C400;
         top: 44px;
-        left: 0;        
+        left: 0;
         @media screen and (max-width: 768px) {
             top: 0;
         }
@@ -62,8 +62,8 @@
                 padding-left: 25px;
                 padding-right: 25px;
                 line-height: 54px;
-                white-space: normal; 
-                max-width:385px;    
+                white-space: normal;
+                max-width:385px;
                 @media screen and (max-width: 992px) {
                     top: 50%;
                     max-width: 100%;
@@ -100,7 +100,7 @@
                 z-index: 80;
                 cursor: pointer;
                 font-family: $m-font;
-                max-width: 285px;                
+                max-width: 285px;
                 @media screen and (max-width: 768px) {
                     text-align: left;
                     width: 75%;
@@ -124,7 +124,7 @@
                         cursor: pointer;
                 }
 
-                        
+
             }
         }
         .col-md-3 {
@@ -167,8 +167,8 @@
             }
             .overlay-3 {
                 background-image: url('/wp-content/uploads/2017/11/3-1.jpg');
-            }        
-        }        
+            }
+        }
     }
     .vid-1, .vid-2, .vid-3 {
         background-image: url('http://staging.causeforce.com/wp-content/uploads/2017/10/interactive-1.jpg');
@@ -189,7 +189,7 @@
         .jquery-background-video {
             display: none;
         }
-        
+
     }
     /* Hide Play button + controls on iOS */
     video::-webkit-media-controls {
@@ -225,7 +225,7 @@
     position: relative;
     max-width: 70px;
     z-index: 80;
-    margin-top: 25px;    
+    margin-top: 25px;
         svg {
             max-height: 70px;
             max-width: 70px;
@@ -242,20 +242,20 @@
         }
 
         @media screen and (max-width:768px) {
-            padding-top: 105px;            
+            padding-top: 105px;
         }
-            
+
     }
     .home-top-svg {
         z-index: 80;
         display: block;
         position: relative;
         max-width: 55px;
-        margin-bottom: 15px;        
+        margin-bottom: 15px;
     }
     .home-header-svg {
         margin-bottom: 15px;
-    }    
+    }
 }
 
 .col-pic-row {
@@ -406,41 +406,41 @@ $topenter: -10px;
     animation-delay: $delay;
 }
 @-webkit-keyframes enter{
-    0%   { 
+    0%   {
         opacity: 0;
         top: $topenter;
     }
-    5%   { 
+    5%   {
         opacity: 1;
         top: 0px;
     }
-    50.9% { 
+    50.9% {
         opacity: 1;
         top: 0px;
     }
-    55.9% { 
+    55.9% {
         opacity: 0;
         top: - $topenter;
     }
     100% {
         opacity: 1;
     }
-    
+
 }
 @keyframes enter{
-    0%   { 
+    0%   {
         opacity: 0;
         top: $topenter;
     }
-    5%   { 
+    5%   {
         opacity: 1;
         top: 0px;
     }
-    50.9% { 
+    50.9% {
         opacity: 1;
         top: 0px;
     }
-    55.9% { 
+    55.9% {
         opacity: 0;
         top: - $topenter;
     }
@@ -449,19 +449,19 @@ $topenter: -10px;
     }
 }
 @-moz-keyframes enter{
-    0%   { 
+    0%   {
         opacity: 0;
         top: $topenter;
     }
-    5%   { 
+    5%   {
         opacity: 1;
         top: 0px;
     }
-    50.9% { 
+    50.9% {
         opacity: 1;
         top: 0px;
     }
-    55.9% { 
+    55.9% {
         opacity: 0;
         top: - $topenter;
     }
@@ -532,7 +532,7 @@ $topenter: -10px;
    margin-right:0;
 }
 
-// Graph 
+// Graph
 
 .circle {
     overflow: hidden;
@@ -599,19 +599,19 @@ $topenter: -10px;
 #graph div:nth-child(n+3) {
     height:30px;
     left: 20px;
-    
+
 }
 
 #graph div:nth-child(n+4) {
     height:28px;
     left: 30px;
-    
+
 }
 
 #graph div:nth-child(n+5) {
     height: 37px;
     left: 40px;
-    
+
 }
 
 #graph div:nth-child(n+6) {
@@ -817,7 +817,7 @@ $topenter: -10px;
         max-width:890px;
         margin: 0 auto;
     }
-    .sig-images-row {        
+    .sig-images-row {
         max-width: 1140px;
         margin: 0 auto;
         padding-bottom: 60px;
@@ -830,7 +830,7 @@ $topenter: -10px;
             }
         }
 
-    
+
     }
     .market-digital{
         padding-top: 60px;
@@ -876,7 +876,7 @@ $topenter: -10px;
             text-align: right;
             display: block;
             color: #E07C20;
-        }        
+        }
     }
     .marketing-learn-more, .fundraise-learn-more, .events-learn-more {
         ul {
@@ -889,8 +889,8 @@ $topenter: -10px;
     .disp-none {
         display: none;
         animation-duration: .4s;
-        animation-fill-mode: both;       
-        
+        animation-fill-mode: both;
+
     }
     .marketing-slide-2, .marketing-slide-3, .marketing-slide-4, .marketing-slide-1, .consult-img-col, .consult-text-col, .fundraise-slide-2, .fundraise-slide-3, .fundraise-slide-4, .fundraise-slide-1, .events-slide-2, .events-slide-3, .events-slide-4, .events-slide-1,{
         opacity: 0;
@@ -948,7 +948,7 @@ $topenter: -10px;
             background: #073564;
             text-decoration:none;
         }
-    }    
+    }
     @media screen and (max-width: 768px) {
         .discover-intro-copy {
             padding-left: 20px;
@@ -963,7 +963,7 @@ $topenter: -10px;
             padding-right: 30px;
         }
     }
-    
+
 }
 
 
@@ -986,7 +986,7 @@ $topenter: -10px;
     }
 }
 #contact {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
     .inner-container {
         @media screen and (max-width: 768px) {
             padding: 0 25px;
@@ -1079,7 +1079,7 @@ $topenter: -10px;
     }
     .img-col-4 {
         background-image: url(/wp-content/uploads/2017/11/AOP_SubHero2.jpg);
-    }            
+    }
     .mobile-cont {
         padding-top: 25px;
         padding-bottom: 40px;
@@ -1090,7 +1090,7 @@ $topenter: -10px;
     .txt-col {
         h2 {
             margin-top: 25px;
-            margin-bottom: 40px;            
+            margin-bottom: 40px;
         }
     }
     .row {
@@ -1104,12 +1104,12 @@ $topenter: -10px;
     .row-01 {
         border-bottom: 2px solid #dadada;
         padding-bottom: 40px;
-        padding-top: 25px;  
+        padding-top: 25px;
         .alofs-quote {
             max-width: 950px;
             margin: 0 auto;
-    
-        }      
+
+        }
         p {
             padding: 0 100px;
             @media screen and (max-width: 768px) {
@@ -1149,10 +1149,10 @@ $topenter: -10px;
     }
     .row-02 {
         .our-work-intro {
-            margin-bottom: 70px; 
+            margin-bottom: 70px;
             p{
                 margin-bottom: 20px;
-            }           
+            }
         }
         .onewalk-txt.one {
             margin-top:70px;
@@ -1234,9 +1234,9 @@ $topenter: -10px;
     }
     .row-04 {
         margin-bottom: 100px;
-        border-top: 2px solid #dadada;  
+        border-top: 2px solid #dadada;
         padding-top: 70px;
-        margin-top: 70px;              
+        margin-top: 70px;
         @media screen and (max-width: 768px) {
             margin-bottom: 30px;
         }
@@ -1249,7 +1249,7 @@ $topenter: -10px;
             p {
                 font-size: 22px;
             }
-                            
+
             &:first-child {
                 background-position: center center;
                 background-size: cover;
@@ -1283,18 +1283,18 @@ $topenter: -10px;
                     }
                 }
             }
-        }  
+        }
     }
 }
 #our-gray-row {
     .gray-row {
         padding: 50px 20px;
-        padding-top: 80px;        
+        padding-top: 80px;
         h1 {
             font-family: $body-font;
             text-align: center;
             text-transform: none;
-           
+
         }
         .orange-btn {
             padding: 15px 40px;
@@ -1491,7 +1491,7 @@ $topenter: -10px;
         font-size: 35px;
         color: #fed201;
         display: none;
-        text-shadow: 0px 0px 15px #000; 
+        text-shadow: 0px 0px 15px #000;
     }
     .modal {
         display: none;
@@ -1744,7 +1744,7 @@ nav.navigation.posts-navigation {
                 }
                 @media screen and (max-width: 768px) {
                     text-align: left;
-                }                
+                }
             }
             p.text-orange, img {
                 display: none;
@@ -1754,9 +1754,9 @@ nav.navigation.posts-navigation {
                 padding: 10px 20px;
                 @media screen and (max-width: 768px) {
                     text-align: left;
-                   
+
                     margin: 20px auto 10px auto;
-                }                
+                }
             }
             &:first-child {
                 box-shadow: 0 0 20px #dadada;
@@ -1832,14 +1832,14 @@ nav.navigation.posts-navigation {
     background-color: #073564;
     height: 100vh;
     .main-row {
-        height: 100vh;        
+        height: 100vh;
         .intro-col {
-            top: -90px;            
+            top: -90px;
         }
         .intro-col-header {
             h1 {
                 color: #fff;
-            }            
+            }
         }
 
     }
@@ -1857,7 +1857,7 @@ nav.navigation.posts-navigation {
     /* Hide Play button + controls on iOS */
     video::-webkit-media-controls {
         display:none !important;
-    }    
+    }
 }
 .site-map-links {
     max-width: 1000px;
@@ -1865,9 +1865,9 @@ nav.navigation.posts-navigation {
         color: #fff;
         display: inline;
         font-family: $r-font;
-        
+
     }
-   
+
 }
 #privacy-hero {
     .privacy-bg {
@@ -1883,11 +1883,11 @@ nav.navigation.posts-navigation {
 }
 #privacy-policy {
     margin-bottom: 100px;
-    margin-top: 40px;    
+    margin-top: 40px;
     h1,h2 {
     margin-top: 30px;
     margin-bottom: 40px;
-    text-transform: none;    
+    text-transform: none;
     }
 }
 
@@ -1931,6 +1931,8 @@ nav.navigation.posts-navigation {
 
 
 #careers {
+    height: auto;
+    min-height: 98vh;
     .hero {
         img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
             padding-top: 4.5cm;
@@ -1956,6 +1958,14 @@ nav.navigation.posts-navigation {
     .jobWrapper {
         width: 90%;
         margin-left: 5%;
+        a, p{
+            font-family: Din Reg,Arial,sans-serif;
+        }
+        a {
+          @media screen and (max-width: 768px) {
+              font-family: Din Bold,Arial,sans-serif;
+          }
+        }
         a:hover {
             text-decoration: underline;
         }
@@ -1988,21 +1998,18 @@ nav.navigation.posts-navigation {
     }
 }
 
-.content-info.cf-footer {
-    margin-top: 300px;
-}    
-
-
-
-
+//.content-info.cf-footer {
+//    margin-top: 300px;
+//}
 
 // ***                       *** //
 // **** Single Jobs Styling **** //
 // ***                       *** //
 
-
-
 .jobs-template-default.single-jobs {
+    .type-jobs {
+        padding-bottom: 50px;
+    }
     div.wrap {
         h1.entry-title {
             text-align: left;
@@ -2018,7 +2025,7 @@ nav.navigation.posts-navigation {
                 p {
                     text-align: center;
                 }
-            }   
+            }
             h6 {
                 padding-top: 20px;
                 font-size: 18px;
@@ -2028,7 +2035,7 @@ nav.navigation.posts-navigation {
             p {
                 margin-top: 0px;
                 margin-bottom: 10px;
-                width: 131%
+                width: 131%;
             }
              a {
                 button.orangeBtn {

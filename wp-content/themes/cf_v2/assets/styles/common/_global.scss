@@ -1,6 +1,8 @@
 // Global Styles
 body {
     position: relative;
+    height: auto;
+    min-height: 100vh;
     // padding-bottom: 306px;
     // @media screen and (max-width: 768px) {
     //     padding-bottom: 345px;
@@ -12,8 +14,8 @@ h1,h2,h3,h4 {
     color: $blue;
 }
 h5 {
- font-family: "Din Bold", Arial, sans-serif;  
- color: $blue;  
+ font-family: "Din Bold", Arial, sans-serif;
+ color: $blue;
 }
 p, div, span {
     font-family: $body-font;
@@ -21,6 +23,9 @@ p, div, span {
 }
 strong {
     font-family: "Din Bold", Arial, sans-serif;
+}
+li {
+    font-family: "Din Reg", Arial, sans-serif;
 }
 a:hover {
     text-decoration: none;

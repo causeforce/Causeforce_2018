@@ -1,4 +1,13 @@
 .cf-footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $blue;
+    color: $white;
+    padding: 50px 15px;
+
+
     .social-container {
         text-align: center;
     }
@@ -25,14 +34,6 @@
         text-align: center;
         font-family: $r-font;
     }
-    
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $blue;
-    color: $white;
-    padding: 50px 15px;
     .col-12{
         .mobile-brand {
             img {
