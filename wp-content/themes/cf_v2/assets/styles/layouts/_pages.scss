@@ -16,7 +16,7 @@
     .hero-row {
         max-height: 1140px;
         @media screen and (max-width:992px) {
-            max-height: auto;
+            max-height: initial;
         }
     }
     .yellow-bar {
@@ -689,7 +689,7 @@ $topenter: -10px;
     padding: 0px;
     .solutions-bg {
         background: url(/wp-content/uploads/2017/11/Solutions-1-1.jpg);
-        background-position: center center;
+        //background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 500px;
@@ -1408,6 +1408,7 @@ $topenter: -10px;
             }
             a {
                 display: block;
+                margin: -10px 50px 5px;
                 margin-top: -10px;
                 text-align: center;
             }
@@ -1611,6 +1612,7 @@ $topenter: -10px;
         }
         svg {
             width: 53%;
+            max-width: 100px;
             display: block;
             margin: 0 auto;
             .blueFill {
@@ -1662,8 +1664,8 @@ $topenter: -10px;
     }
     .social-container {
         .row {
-            margin-top: 20px;
-            padding: 0 20px;
+            //margin-top: 20px;
+            //padding: 0 20px;
             .fa {
                 color: #dadada;
                 &:hover {

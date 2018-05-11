@@ -19,8 +19,8 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        
-        // Full screen menu 
+
+        // Full screen menu
         $('.bt-menu').click(function(e) {
             $(this).toggleClass('active');
             return false;
@@ -43,16 +43,16 @@
            $('.ct-form').slideUp();
         });
         $('.mail-icn').on('click', function() {
-           $('.ct-form').slideDown(); 
+           $('.ct-form').slideDown();
         });
-          
+
         // ON Scroll Up/Down to show/hide Infinite CF Logo
         var windowSize = $(window).width();
 
         if (windowSize < 992) {
             $(".site-map-links").removeClass("justify-content-around");
             $(".site-map-links").removeClass("d-flex");
-            
+
         }
 
         $(window).on('resize', function(){
@@ -60,15 +60,15 @@
             if ($(window).width() < 992) {
                 $(".site-map-links").removeClass("justify-content-around");
                 $(".site-map-links").removeClass("d-flex");
-                
+
             } else {
                 $(".site-map-links").addClass("justify-content-around");
-                $(".site-map-links").addClass("d-flex");      
+                $(".site-map-links").addClass("d-flex");
             }
         });
-          
+
         $(window).on('scroll', function() {
-            
+
             if ($(window).scrollTop() > 60) {
                 $('header.banner').addClass('fixed-nav');
                 $('.menu-cont > .brand > img:eq(0)').css({
@@ -84,12 +84,12 @@
                     left: '0px',
                     opacity: 1
                 });
-            } 
+            }
         });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-        
+
         // Press page js since press page lives inside index.php must be global code else it won't work
         var pressLink = $('#press .row-01 .col-md-6 div a').attr('href');
         $('.press-ft-link').attr('href', pressLink);
@@ -114,27 +114,27 @@
         // $('.gray-row').fadeToggle();
 //            $('.square').addClass('show');
 //            $('#graph').addClass('show');
-            }, { 
+            }, {
                 offset: '98%'
         });
         $(".col-pic-row").waypoint(function(){
             $('.text-col').addClass('show');
-            }, { 
+            }, {
                 offset: '50%'
-        });       
+        });
         $(".col-pic-row").waypoint(function(){
             $('.picture-col').addClass('show');
-            }, { 
+            }, {
                 offset: '65%'
         });
         $(".ready-row").waypoint(function(){
             $('.talk-col').addClass('show');
-            }, { 
+            }, {
                 offset: '95%'
         });
         $(".ready-row").waypoint(function(){
             $('.orange-btn').addClass('show');
-            }, { 
+            }, {
                 offset: '70%'
         });
 
@@ -144,19 +144,19 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
 
-        function hoverVideo(e) {  
-            $('video', this).get(0).play(); 
+        function hoverVideo(e) {
+            $('video', this).get(0).play();
         }
 
         function hideVideo(e) {
-            $('video', this).get(0).pause(); 
+            $('video', this).get(0).pause();
         }
-          
+
         // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
         //== Home inner container hovers ==\\
-          
+
         // First Video Column
         $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 svg').on("mouseenter", function(){
             $('video').get(0).play();
@@ -165,17 +165,17 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Second video column
         $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 svg').on("mouseenter", function(){
-            $('video').get(1).play();  
+            $('video').get(1).play();
         });
         $('.video-overlay.overlay-2').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Third Video Column
         $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 svg').on("mouseenter", function(){
@@ -185,7 +185,7 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
 
         // column clicks route to selected solutions section
@@ -198,7 +198,7 @@
         $(".events-col, .events-col h1, .events-col svg").on("click", function(){
              window.location = "http://www.causeforce.com/solutions/#events";
         });
-        
+
 
 
       }
@@ -208,7 +208,7 @@
       init: function() {
         // JavaScript to be fired on the about us page
         var windowSize = $(window).width();
-          
+
         if (windowSize > 768) {
             $('.row-02 .col-md-3').on('click', function(){
                 $(this).children('.text-cont').addClass('orange-bg');
@@ -219,7 +219,7 @@
                     $('html, body').animate({
                         scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
                     }, 'slow');
-                }                
+                }
                 else if ($(this).hasClass('afp-col')) {
                     $(this).siblings('.col-12.txt-col').children('.afp-txt').fadeIn();
                     $(this).siblings('.col-12.txt-col').children().not('.afp-txt').fadeOut();
@@ -241,7 +241,7 @@
                 }
             });
         } else  {
-            $('.db-col').append($('.diabetes-txt'));            
+            $('.db-col').append($('.diabetes-txt'));
             $('.ccrf-col').append($('.ccrf-txt').hide());
             $('.ow-col').append($('.onewalk-txt').hide());
             $('.afp-col').append($('.afp-txt').hide());
@@ -352,72 +352,72 @@
         var aboutTitle = '#aboutModal .about-title';
         var aboutBio = '#aboutModal .about-bio';
         $('#about .row-03 .col-md-3').on('click', function(){
-            if ($(this).children('a').text() === 'Alex Baxter') {
+            if ($(this).children('a.cfNames').text() === 'Alex Baxter') {
                 $(aboutName).html(alexBio.name);
                 $(aboutTitle).html(alexBio.title);
                 $(aboutBio).html(alexBio.bio);
                 $('.linkedIn').attr('href', alexBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Julie Winfield') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Julie Winfield') {
                 $(aboutName).html(julieBio.name);
                 $(aboutTitle).html(julieBio.title);
                 $(aboutBio).html(julieBio.bio);
                 $('.linkedIn').attr('href', julieBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Bev Deeth') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Bev Deeth') {
                 $(aboutName).html(bevBio.name);
                 $(aboutTitle).html(bevBio.title);
                 $(aboutBio).html(bevBio.bio);
                 $('.linkedIn').attr('href', bevBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Will Kirsop') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Will Kirsop') {
                 $(aboutName).html(willBio.name);
                 $(aboutTitle).html(willBio.title);
                 $(aboutBio).html(willBio.bio);
                 $('.linkedIn').attr('href', willBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Rebel Neary') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Rebel Neary') {
                 $(aboutName).html(rebelBio.name);
                 $(aboutTitle).html(rebelBio.title);
                 $(aboutBio).html(rebelBio.bio);
                 $('.linkedIn').attr('href', rebelBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Robby Facer') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Robby Facer') {
                 $(aboutName).html(robbyBio.name);
                 $(aboutTitle).html(robbyBio.title);
                 $(aboutBio).html(robbyBio.bio);
                 $('.linkedIn').attr('href', robbyBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Patrick Barkhordarian') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Patrick Barkhordarian') {
                 $(aboutName).html(patBio.name);
                 $(aboutTitle).html(patBio.title);
                 $(aboutBio).html(patBio.bio);
                 $('.linkedIn').attr('href', patBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Julian Brown') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Julian Brown') {
                 $(aboutName).html(julianBio.name);
                 $(aboutTitle).html(julianBio.title);
                 $(aboutBio).html(julianBio.bio);
                 $('.linkedIn').attr('href', julianBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Gregory Shin') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Gregory Shin') {
                 $(aboutName).html(gregBio.name);
                 $(aboutTitle).html(gregBio.title);
                 $(aboutBio).html(gregBio.bio);
                 $('.linkedIn').attr('href', gregBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Ailish Steele') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Ailish Steele') {
                 $(aboutName).html(ailishBio.name);
                 $(aboutTitle).html(ailishBio.title);
                 $(aboutBio).html(ailishBio.bio);
                 $('.linkedIn').attr('href', ailishBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
-            } else if ($(this).children('a').text() === 'Joseph Hartman') {
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Joseph Hartman') {
                 $(aboutName).html(joBio.name);
                 $(aboutTitle).html(joBio.title);
                 $(aboutBio).html(joBio.bio);
                 $('.linkedIn').attr('href', joBio.linkedIn);
-                $('#aboutModal .col-md-5 img').attr('src', $(this).children('img').attr('src'));
+                $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
             }
         });
       }
@@ -443,7 +443,7 @@
           });
           $(''+className+'-slide-4').delay(600).queue(function(){
             $(this).addClass('animated fadeInUp').clearQueue();
-          });                     
+          });
         }
 
         function closeAnimatedColumns(className) {
@@ -471,7 +471,7 @@
        $('.close-fundraise').on('click', function(e){
           e.preventDefault();
           closeAnimatedColumns(".fundraise");
-        });  
+        });
 
         // events row
         $(".events-btn-opn").on('click', function(e){
@@ -482,16 +482,16 @@
        $('.close-events').on('click', function(e){
           e.preventDefault();
           closeAnimatedColumns(".events");
-        });                          
- 
+        });
+
         $('.consulting-row').waypoint(function(){
             $('.consult-img-col').addClass('animated fadeInRight');
             $('.consult-text-col').addClass('animated fadeInRight');
             },
-            { 
+            {
             offset: '85%'
-            });        
-        
+            });
+
       }
     },
     // Home page
@@ -512,27 +512,27 @@
         // $('.gray-row').fadeToggle();
 //            $('.square').addClass('show');
 //            $('#graph').addClass('show');
-            }, { 
+            }, {
                 offset: '98%'
         });
         $(".col-pic-row").waypoint(function(){
             $('.text-col').addClass('show');
-            }, { 
+            }, {
                 offset: '50%'
-        });       
+        });
         $(".col-pic-row").waypoint(function(){
             $('.picture-col').addClass('show');
-            }, { 
+            }, {
                 offset: '65%'
         });
         $(".ready-row").waypoint(function(){
             $('.talk-col').addClass('show');
-            }, { 
+            }, {
                 offset: '95%'
         });
         $(".ready-row").waypoint(function(){
             $('.orange-btn').addClass('show');
-            }, { 
+            }, {
                 offset: '70%'
         });
 
@@ -540,19 +540,19 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
 
-        function hoverVideo(e) {  
-            $('video', this).get(0).play(); 
+        function hoverVideo(e) {
+            $('video', this).get(0).play();
         }
 
         function hideVideo(e) {
-            $('video', this).get(0).pause(); 
+            $('video', this).get(0).pause();
         }
-          
+
         // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
         //== Home inner container hovers ==\\
-          
+
         // First Video Column
         $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 svg').on("mouseenter", function(){
             $('video').get(0).play();
@@ -561,17 +561,17 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Second video column
         $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 svg').on("mouseenter", function(){
-            $('video').get(1).play();  
+            $('video').get(1).play();
         });
         $('.video-overlay.overlay-2').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Third Video Column
         $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 svg').on("mouseenter", function(){
@@ -581,7 +581,7 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
 
         // column clicks route to selected solutions section
@@ -615,27 +615,27 @@
         // $('.gray-row').fadeToggle();
 //            $('.square').addClass('show');
 //            $('#graph').addClass('show');
-            }, { 
+            }, {
                 offset: '98%'
         });
         $(".col-pic-row").waypoint(function(){
             $('.text-col').addClass('show');
-            }, { 
+            }, {
                 offset: '50%'
-        });       
+        });
         $(".col-pic-row").waypoint(function(){
             $('.picture-col').addClass('show');
-            }, { 
+            }, {
                 offset: '65%'
         });
         $(".ready-row").waypoint(function(){
             $('.talk-col').addClass('show');
-            }, { 
+            }, {
                 offset: '95%'
         });
         $(".ready-row").waypoint(function(){
             $('.orange-btn').addClass('show');
-            }, { 
+            }, {
                 offset: '70%'
         });
 
@@ -645,19 +645,19 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
 
-        function hoverVideo(e) {  
-            $('video', this).get(0).play(); 
+        function hoverVideo(e) {
+            $('video', this).get(0).play();
         }
 
         function hideVideo(e) {
-            $('video', this).get(0).pause(); 
+            $('video', this).get(0).pause();
         }
-          
+
         // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
         //== Home inner container hovers ==\\
-          
+
         // First Video Column
         $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 svg').on("mouseenter", function(){
             $('video').get(0).play();
@@ -666,17 +666,17 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Second video column
         $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 svg').on("mouseenter", function(){
-            $('video').get(1).play();  
+            $('video').get(1).play();
         });
         $('.video-overlay.overlay-2').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
         // Third Video Column
         $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 svg').on("mouseenter", function(){
@@ -686,7 +686,7 @@
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
             playLivicons.playLiviconEvo({
                 duration: 'default'
-            }); 
+            });
         });
 
         // column clicks route to selected solutions section
@@ -699,7 +699,7 @@
         $(".events-col, .events-col h1, .events-col svg").on("click", function(){
              window.location = "http://www.causeforce.com/solutions/#events";
         });
-        
+
 
 
       }
@@ -709,7 +709,7 @@
             // Leave this here for testing, can be deleted if need be.
 
       },
-        finalize: function() {        
+        finalize: function() {
 
 
         }
