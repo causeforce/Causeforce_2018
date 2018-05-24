@@ -348,6 +348,12 @@
             bio: 'Ailish is the Director of Communications, holding responsibility to lead Internal and External Communications for CauseForce, its brands and clients. With responsibility to continue to develop and advance Communications strategies and tactics, Ailish’s skillset is heightened within Media Relations, Client and Partner Relations, and Proactive and Reactive Messaging, through a decade-long role within the CauseForce Communications Department. Ailish’s team drives top-tier traditional and non-traditional media coverage, executes and manages social media platforms to highlight marketing campaigns and localized content, all while showcasing the stories behind the brands.' + '<br><br>'+ 'Joining CauseForce in January 2009 as Communications Intern, Ailish continued to advance her responsibility within the Canadian Communications department. In October 2012, Ailish was granted the opportunity to help build the Communications strategies for Australian and US markets, taking on global responsibility. Advancing to Director in January 2016, Ailish has molded the Communications team to thrive on a front-page news story and land blockbuster media coverage across the globe, while raising awareness of life-changing experiences and transformational dollars for facilities across the world.' +'<br><br>'+ 'Ailish currently resides in Toronto and holds a Honours Bachelor of Applied Arts in Media Studies and a Diploma in Media Communications from the University of Guelph-Humber.',
             linkedIn: 'https://www.linkedin.com/in/ailish-steele-0790571a'
         };
+        var ginaBio = {
+          name: 'Gina-Marie Strong',
+          title: 'Director of Corporate Partnerships',
+          bio: 'Gina-Marie leads the Corporate Partnerships Team across North America. Gina and her team are responsible for the sales support, activation and renewal of all corporate sponsorships. She has worked on events and fundraising campaigns across Canada, the United States, and Europe. Gina has experience in event planning and execution as well as managing high profile sponsor relationships. Gina has a wide range of event experience which includes 5K-10K\'s, multi-day walks, multi-day cycling events, golf tournaments, hockey tournaments, company team building events and more. She focuses on ensuring event sponsors are treated as true partners and receive the highest level of customer service and ROI. Gina works with our clients to solicit partnerships that add value to the event, provide cost savings to the budget as well as enhance the participant experience year-round and non-event.' + '<br><br>' + 'Over the past four years, Gina has managed over 150 sponsor relationships spanning from $1,000 to $1 Million.' + '<br><br>' + 'Gina has a BA in Communications from the University of Nevada Las Vegas and an MBA in Sports Management from the Universidad Europea de Madrid. Gina and her husband Jonathan are proud parents to their son, Wylder.',
+          linkedIn: 'https://www.linkedin.com/in/ginamariestrong'
+        };
         var aboutName = '#aboutModal .about-name';
         var aboutTitle = '#aboutModal .about-title';
         var aboutBio = '#aboutModal .about-bio';
@@ -418,6 +424,12 @@
                 $(aboutBio).html(joBio.bio);
                 $('.linkedIn').attr('href', joBio.linkedIn);
                 $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
+            } else if ($(this).children('a.cfNames').text() === 'Gina-Marie Strong') {
+              $(aboutName).html(ginaBio.name);
+              $(aboutTitle).html(ginaBio.title);
+              $(aboutBio).html(ginaBio.bio);
+              $('.linkedIn').attr('href', ginaBio.linkedIn);
+              $('#aboutModal .col-md-5 img').attr('src', $(this).children('.cfImages').children('img').attr('src'));
             }
         });
       }
